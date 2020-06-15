@@ -1,38 +1,103 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+  padding: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  font-family: "Merriweather", serif;
 }
 
-.App-header {
-  background-color: #282c34;
+.stroke {
+  height: 5px;
+  width: 80px;
+  margin: auto;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  background-color: #fff;
+}
+
+.form-control:focus {
+  border-color: #999;
+  outline: 0;
+  box-shadow: none !important;
+}
+
+.app {
   min-height: 100vh;
+  background: linear-gradient(to right bottom, #93a5cf, #e4efe9);
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/*---------- Chat box -------------*/
+
+.chat-info-bar {
+  background-color: teal;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.room-name {
+  margin-left: 10px;
+  color: #fff;
+}
+
+.messages-container {
+  height: 60vh;
+  /* max-height: 50vh; */
+  background-color: #fff;
+  padding: 10px;
+}
+
+.message-box,
+.send-btn {
+  border-radius: 0 !important;
+  height: 50px;
+}
+
+.send-btn {
+  background-color: teal;
+}
+
+.message-username {
+  font-size: 12px;
+  margin-bottom: 3px;
+}
+
+.current-user {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.current-user .message-inner {
+  background-color: teal;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+.other-user {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.other-user .message-inner {
+  background-color: #ccc;
+  padding: 5px 10px;
+  border-radius: 10px;
 }
