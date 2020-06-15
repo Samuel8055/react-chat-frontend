@@ -13,7 +13,7 @@ const Chat = (props) => {
   const [room, setRoom] = useState("");
   const [message, setMessage] = useState("");
   const [messages, setMessages] = useState([]);
-  const ENDPOINT = "https://git.heroku.com/react-mychatapplication.git";
+  const ENDPOINT = "https://react-mychatapplication.herokuapp.com/";
 
   useEffect(() => {
     const { name, room } = queryString.parse(props.location.search);
